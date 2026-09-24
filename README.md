@@ -32,4 +32,6 @@ Production app: https://evidence-atlas-bice.vercel.app
 python -m py_compile contracts/evidence_atlas.py
 ```
 
+See [architecture](docs/ARCHITECTURE.md) and [threat model](docs/THREAT_MODEL.md) for the trust boundaries reviewers should verify.
+
 EvidenceAtlas is an evidence-indexing demonstration, not professional advice.
