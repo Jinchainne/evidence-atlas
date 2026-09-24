@@ -1,8 +1,28 @@
 # EvidenceAtlas
 
+> A wallet-driven GenLayer Project for durable, evidence-bound observation receipts.
+
+[![Contract](https://img.shields.io/badge/GenLayer-StudioNet-4e9364)](https://genlayer-explorer.vercel.app/address/0x39E82ec39C548Eed0b6dF9E226f5767400272c52) [![App](https://img.shields.io/badge/Live-App-10251b)](https://evidence-atlas-bice.vercel.app) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 ## Project
 
 EvidenceAtlas is a small GenLayer Project for creating durable, verifiable observation receipts. A user submits a question and HTTPS evidence URL, signs the transaction, waits for validator finality, and reads the canonical receipt back from the contract.
+
+## At a glance
+
+| Layer | Responsibility |
+| --- | --- |
+| Browser | Wallet connection, signed writes, receipt polling, canonical readback |
+| Intelligent Contract | Request storage, independent evidence retrieval, typed consensus result |
+| Validators | Re-fetch evidence and agree on answer, explanation and evidence digest |
+
+```mermaid
+flowchart LR
+  U[User + EIP-1193 wallet] -->|sign| W[EvidenceAtlas contract]
+  W -->|independent fetch| V[GenLayer validators]
+  V -->|answer + SHA-256 digest| W
+  W -->|finalized receipt| U
+```
 
 ### User workflow
 
