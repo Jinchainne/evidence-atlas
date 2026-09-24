@@ -1,0 +1,9 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "contract": "EvidenceAtlas",
+  "address": "0x39E82ec39C548Eed0b6dF9E226f5767400272c52",
+  "deploymentTransaction": "0x91d104a8b14fe465f3c2148cd62bbf079f2aca714cd59bff57ad79bcc64fa7d",
+  "status": "ACCEPTED",
+  "consensusResult": "MAJORITY_AGREE"
+}

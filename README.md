@@ -26,7 +26,7 @@ Add the deployed app, explorer contract, and repository links here after deploym
 
 Production app: https://evidence-atlas-bice.vercel.app
 
-Set `VITE_CONTRACT_ADDRESS` in the Vercel project after deploying `contracts/evidence_atlas.py`; the UI intentionally refuses to claim a successful write until a real contract receipt is finalized.
+Deployed contract: [`0x39E82ec39C548Eed0b6dF9E226f5767400272c52`](https://genlayer-explorer.vercel.app/address/0x39E82ec39C548Eed0b6dF9E226f5767400272c52). Deployment transaction: [`0x91d104a8b14fe465f3c2148cd62bbf079f2aca714cd59bff57ad79bcc64fa7d`](https://genlayer-explorer.vercel.app/tx/0x91d104a8b14fe465f3c2148cd62bbf079f2aca714cd59bff57ad79bcc64fa7d).
 
 ### Verification
 
