@@ -26,6 +26,8 @@ Add the deployed app, explorer contract, and repository links here after deploym
 
 Production app: https://evidence-atlas-bice.vercel.app
 
+Set `VITE_CONTRACT_ADDRESS` in the Vercel project after deploying `contracts/evidence_atlas.py`; the UI intentionally refuses to claim a successful write until a real contract receipt is finalized.
+
 ### Verification
 
 ```bash
