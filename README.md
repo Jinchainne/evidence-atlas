@@ -24,7 +24,7 @@ EvidenceAtlas is a small GenLayer Project for creating durable, verifiable obser
 
 Add the deployed app, explorer contract, and repository links here after deployment. Keep the three links on the same release so reviewers can reproduce the workflow.
 
-Current app preview: https://frontend-six-smoky-71.vercel.app
+Production app: https://evidence-atlas-bice.vercel.app
 
 ### Verification
 
