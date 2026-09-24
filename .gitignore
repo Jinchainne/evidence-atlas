@@ -4,3 +4,5 @@ __pycache__/
 artifacts/
 node_modules/
 dist/
+frontend/.vercel/
+frontend/.vercel-*/
