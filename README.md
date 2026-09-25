@@ -2,7 +2,7 @@
 
 > A wallet-driven GenLayer Project for durable, evidence-bound observation receipts.
 
-[![Contract](https://img.shields.io/badge/GenLayer-StudioNet-4e9364)](https://explorer-studio.genlayer.com/address/0x39E82ec39C548Eed0b6dF9E226f5767400272c52) [![App](https://img.shields.io/badge/Live-App-10251b)](https://evidence-atlas-bice.vercel.app) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Contract](https://img.shields.io/badge/GenLayer-StudioNet-4e9364)](https://explorer-studio.genlayer.com/address/0x28668FdEd42A0BC6Af6c0944dC14a2b2E2787982) [![App](https://img.shields.io/badge/Live-App-10251b)](https://evidence-atlas-bice.vercel.app) [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ## Project
 
@@ -46,7 +46,7 @@ Add the deployed app, explorer contract, and repository links here after deploym
 
 Production app: https://evidence-atlas-bice.vercel.app
 
-Deployed contract: [`0x39E82ec39C548Eed0b6dF9E226f5767400272c52`](https://explorer-studio.genlayer.com/address/0x39E82ec39C548Eed0b6dF9E226f5767400272c52). Deployment transaction: [`0x91d104a8b14fe465f3c2148cd62bbf079f2aca714cd59bff57ad79bcc64fa7d`](https://explorer-studio.genlayer.com/tx/0x91d104a8b14fe465f3c2148cd62bbf079f2aca714cd59bff57ad79bcc64fa7d).
+Deployed contract: [`0x28668FdEd42A0BC6Af6c0944dC14a2b2E2787982`](https://explorer-studio.genlayer.com/address/0x28668FdEd42A0BC6Af6c0944dC14a2b2E2787982). Deployment transaction: [`0xefe85be91610b6765a010c60624879cb5549734856192a9b2cdb901a077ba8cd`](https://explorer-studio.genlayer.com/tx/0xefe85be91610b6765a010c60624879cb5549734856192a9b2cdb901a077ba8cd).
 
 ### Verification
 
