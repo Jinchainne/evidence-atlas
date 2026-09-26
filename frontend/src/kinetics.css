@@ -1,0 +1,10 @@
+:root{--atlas-spring:cubic-bezier(.34,1.56,.64,1)}
+.hero-actions button,.nav-button,.actions button{transition:transform .35s var(--atlas-spring),box-shadow .25s ease,background .2s ease}
+.hero-actions button:hover,.nav-button:hover,.actions button:hover{transform:translateY(-3px) scale(1.02)}
+.hero-actions button:active,.nav-button:active,.actions button:active{transform:translateY(0) scale(.96)}
+.panel{transition:transform .45s var(--atlas-spring),box-shadow .35s ease}
+.panel:hover{transform:translateY(-5px)}
+.metrics div{transition:background .35s ease,transform .35s var(--atlas-spring)}.metrics div:hover{background:#e8eee5;transform:translateY(-2px)}
+.timeline span{transition:color .3s ease,transform .35s var(--atlas-spring)}.timeline span:hover{transform:translateY(-4px);color:#3e8053}.timeline span:hover:before{transform:scale(1.25)}
+.compose input,.compose textarea{transition:border-color .25s ease,box-shadow .3s ease,transform .25s var(--atlas-spring)}.compose input:focus,.compose textarea:focus{transform:translateY(-1px);box-shadow:0 5px 16px #4e936426}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}

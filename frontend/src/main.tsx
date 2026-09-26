@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import "./styles.css";
 import "./motion.css";
 import "./product.css";
+import "./kinetics.css";
 const CONTRACT=(import.meta.env.VITE_CONTRACT_ADDRESS||"0x0000000000000000000000000000000000000000") as Address; const RPC=import.meta.env.VITE_RPC_URL||"https://studio.genlayer.com/api";
 const abi=parseAbi(["function submit_observation(string,string,string)","function verify_observation(string) returns (string)","function get_receipt(string) view returns (string)"]); const client=createPublicClient({transport:http(RPC)});
 function App(){const [account,setAccount]=useState<Address>();const[id,setId]=useState("");const[q,setQ]=useState("");const[url,setUrl]=useState("");const[receipt,setReceipt]=useState("");const[status,setStatus]=useState("Connect a wallet to begin.");
