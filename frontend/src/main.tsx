@@ -5,6 +5,7 @@ import "./styles.css";
 import "./motion.css";
 import "./product.css";
 import "./kinetics.css";
+import "./nav-interactions";
 const CONTRACT=(import.meta.env.VITE_CONTRACT_ADDRESS||"0x35187fC98E72e2236B3E2874050Bb577C51F54b5") as Address; const RPC=import.meta.env.VITE_RPC_URL||"https://studio.genlayer.com/api";
 const studioNet=defineChain({id:61999,name:"GenLayer StudioNet",nativeCurrency:{name:"GEN",symbol:"GEN",decimals:18},rpcUrls:{default:{http:[RPC]}}});
 const abi=parseAbi(["function submit_observation(string,string,string)","function verify_observation(string) returns (string)","function get_receipt(string) view returns (string)"]); const client=createPublicClient({chain:studioNet,transport:http(RPC)});
