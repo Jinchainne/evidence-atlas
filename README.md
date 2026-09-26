@@ -99,6 +99,8 @@ VITE_RPC_URL=https://studio.genlayer.com/api
 5. Confirm the receipt panel reads finalized JSON from `get_receipt`.
 6. A second verification attempt must fail because the receipt is already `VERIFIED`.
 
+The submit action also blocks empty/invalid arguments in the browser before signing. If the wallet is on another network (for example chain `5042`), the app requests a switch to StudioNet before sending the transaction.
+
 ## Deployment
 
 Keep the address, transaction, environment, evidence packet and README synchronized in one commit:
