@@ -60,6 +60,7 @@ class EvidenceAtlas(gl.Contract):
     def list_receipt_ids(self) -> list[str]:
         return [item for item in self.receipt_ids]
 
+
     @gl.public.view
     def get_schema(self) -> dict:
         return {"answers": list(ANSWERS), "max_evidence_chars": 6000, "finalization": "one-time", "source_policy": "https-only"}
