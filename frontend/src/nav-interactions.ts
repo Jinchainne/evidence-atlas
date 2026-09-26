@@ -25,5 +25,12 @@ function bindNavigation() {
   });
 }
 
-if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindNavigation);
-else bindNavigation();
+const observe = () => {
+  bindNavigation();
+  const observer = new MutationObserver(() => bindNavigation());
+  observer.observe(document.body, { childList: true, subtree: true });
+  window.setTimeout(() => observer.disconnect(), 5000);
+};
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", observe, { once: true });
+else observe();

@@ -101,7 +101,7 @@ VITE_RPC_URL=https://studio.genlayer.com/api
 
 The submit action also blocks empty/invalid arguments in the browser before signing. If the wallet is on another network (for example chain `5042`), the app requests a switch to StudioNet before sending the transaction.
 
-The top navigation is functional: **Workspace** focuses the compose form, **Protocol** jumps to the protocol metrics, and **Activity** jumps to the canonical receipt/lifecycle panel. Each destination updates the URL hash for shareable deep links.
+The top navigation is functional: **Workspace** focuses the compose form, **Protocol** jumps to the protocol metrics, and **Activity** jumps to the canonical receipt/lifecycle panel. Navigation binds after the React view mounts, updates the URL hash, and supports shareable deep links.
 
 ## Deployment
 
