@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title">
+  <title id="title">EvidenceAtlas verification workflow</title>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#173f2f"/><stop offset="1" stop-color="#2f805e"/></linearGradient></defs>
+  <rect width="1200" height="300" rx="28" fill="#f4f7f3"/><text x="54" y="54" font-family="Arial" font-size="18" letter-spacing="3" fill="#2f805e">EVIDENCEATLAS · TRUST PATH</text>
+  <g font-family="Arial" font-size="13" font-weight="700">
+    <g><rect x="54" y="96" width="194" height="112" rx="18" fill="url(#g)"/><text x="76" y="128" fill="#b7f56a">01 · WALLET</text><text x="76" y="160" fill="white" font-size="19">Sign input</text><text x="76" y="184" fill="#d7eee1">Question + source</text></g>
+    <g><rect x="286" y="96" width="194" height="112" rx="18" fill="white"/><text x="308" y="128" fill="#2f805e">02 · CONTRACT</text><text x="308" y="160" fill="#14231b" font-size="19">Pin receipt</text><text x="308" y="184" fill="#5b6b62">Store SUBMITTED</text></g>
+    <g><rect x="518" y="96" width="194" height="112" rx="18" fill="white"/><text x="540" y="128" fill="#2f805e">03 · FETCH</text><text x="540" y="160" fill="#14231b" font-size="19">Inspect evidence</text><text x="540" y="184" fill="#5b6b62">Independent validators</text></g>
+    <g><rect x="750" y="96" width="194" height="112" rx="18" fill="white"/><text x="772" y="128" fill="#2f805e">04 · CONSENSUS</text><text x="772" y="160" fill="#14231b" font-size="19">Bind digest</text><text x="772" y="184" fill="#5b6b62">Answer + SHA-256</text></g>
+    <g><rect x="982" y="96" width="164" height="112" rx="18" fill="url(#g)"/><text x="1004" y="128" fill="#b7f56a">05 · RECEIPT</text><text x="1004" y="160" fill="white" font-size="19">Read VERIFIED</text><text x="1004" y="184" fill="#d7eee1">Canonical on-chain</text></g>
+  </g>
+  <g stroke="#8aa596" stroke-width="2"><path d="M250 152h28m-8-8 10 8-10 8M482 152h28m-8-8 10 8-10 8M714 152h28m-8-8 10 8-10 8M946 152h28m-8-8 10 8-10 8" fill="none"/></g>
+</svg>
