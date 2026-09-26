@@ -1,0 +1,5 @@
+@keyframes heroRise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbPulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.06);opacity:1}}
+@keyframes ringSpin{to{transform:rotate(360deg)}}
+@keyframes blink{50%{opacity:.35}}
+.hero>div:first-child{animation:heroRise .8s ease-out both}.hero-orb{animation:heroRise 1s .18s ease-out both}.orb-core{animation:orbPulse 4s ease-in-out infinite}.orb-ring.r1{animation:ringSpin 18s linear infinite}.orb-ring.r2{animation:ringSpin 28s linear reverse infinite}.metrics{animation:heroRise .7s .3s ease-out both}.panel{transition:transform .25s ease,box-shadow .25s ease}.panel:hover{transform:translateY(-3px);box-shadow:0 16px 34px #26372c14}.actions button,.nav-button,.hero-actions button{transition:transform .2s ease,box-shadow .2s ease,background .2s ease}.actions button:hover,.nav-button:hover,.hero-actions button:hover{transform:translateY(-2px);box-shadow:0 8px 20px #173b2a2b}.actions button:active,.nav-button:active,.hero-actions button:active{transform:scale(.97)}.live-dot{animation:blink 2s ease-in-out infinite}.status{transition:background .2s ease}
