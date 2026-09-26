@@ -6,6 +6,8 @@
 
 EvidenceAtlas turns a public question and an HTTPS source into a durable, auditable receipt. The browser signs real transactions; the Intelligent Contract stores the request, validators independently fetch the evidence, and consensus finalizes an answer plus the exact SHA-256 digest of the fetched text.
 
+The frontend is a product console rather than a static form: a sticky protocol navigation, radar-style consensus hero, live metrics, wallet-signed compose panel, canonical receipt readback, and a dark lifecycle rail make the trust path visible at a glance.
+
 ## Live release
 
 | Resource | Link |
