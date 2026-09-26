@@ -39,10 +39,11 @@ flowchart LR
 - `verify_observation(receipt_id)`
 - `get_receipt(receipt_id)`
 - `list_receipt_ids()`
+- `get_schema()`
 
 ### Showcase
 
-Add the deployed app, explorer contract, and repository links here after deployment. Keep the three links on the same release so reviewers can reproduce the workflow.
+The deployed app, explorer contract, and repository links below refer to the same release. See the [reviewer evidence packet](docs/EVIDENCE_PACKET.md) for a reproducible lifecycle.
 
 Production app: https://evidence-atlas-bice.vercel.app
 
@@ -54,6 +55,6 @@ Deployed contract: [`0x28668FdEd42A0BC6Af6c0944dC14a2b2E2787982`](https://explor
 python -m py_compile contracts/evidence_atlas.py
 ```
 
-See [architecture](docs/ARCHITECTURE.md) and [threat model](docs/THREAT_MODEL.md) for the trust boundaries reviewers should verify.
+See [architecture](docs/ARCHITECTURE.md), [threat model](docs/THREAT_MODEL.md), [source provenance](SOURCE_PROVENANCE.md), and [verification status](VERIFICATION_STATUS.md).
 
 EvidenceAtlas is an evidence-indexing demonstration, not professional advice.

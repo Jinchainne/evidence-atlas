@@ -24,7 +24,7 @@ class EvidenceAtlas(gl.Contract):
         parsed = urlsplit(evidence_url.strip())
         if len(question.strip()) < 20 or len(question.strip()) > 1000 or parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password or parsed.fragment:
             raise gl.vm.UserError("Question or evidence URL is invalid")
-        record = {"id": key, "question": question.strip(), "evidence_url": evidence_url.strip(), "state": "SUBMITTED", "answer": "", "evidence_digest": ""}
+        record = {"id": key, "question": question.strip(), "evidence_url": evidence_url.strip(), "submitter": str(gl.message.sender_address), "state": "SUBMITTED", "answer": "", "explanation": "", "evidence_digest": ""}
         self.receipts[key] = json.dumps(record, sort_keys=True, separators=(",", ":"))
         self.receipt_ids.append(key)
 
@@ -59,3 +59,7 @@ class EvidenceAtlas(gl.Contract):
     @gl.public.view
     def list_receipt_ids(self) -> list[str]:
         return [item for item in self.receipt_ids]
+
+    @gl.public.view
+    def get_schema(self) -> dict:
+        return {"answers": list(ANSWERS), "max_evidence_chars": 6000, "finalization": "one-time", "source_policy": "https-only"}
