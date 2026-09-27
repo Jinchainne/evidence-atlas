@@ -8,6 +8,8 @@ EvidenceAtlas turns a public question and an HTTPS source into a durable, audita
 
 The frontend is a product console rather than a static form: a Fluxora-inspired cinematic hero loop, sticky protocol navigation, radar-style consensus hero, live metrics, wallet-signed compose panel, canonical receipt readback, and a dark lifecycle rail make the trust path visible at a glance. The control surface also exposes the leader/validator/finalization path, non-deterministic contract primitives, and transaction lifecycle states directly in the UI.
 
+The hero uses the supplied GenLayer mark from `frontend/public/genlayer-logo.jpg`, rendered inside the animated consensus orb and kept responsive at mobile widths.
+
 ## Live release
 
 | Resource | Link |
