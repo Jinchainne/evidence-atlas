@@ -12,6 +12,10 @@ const panelMarkup = `
   </section>`;
 
 function mountSurface() {
+  const hero = document.querySelector<HTMLElement>(".hero");
+  if (hero && !hero.querySelector(".fluxora-media")) {
+    hero.insertAdjacentHTML("afterbegin", `<div class="fluxora-media" aria-hidden="true"><video autoplay muted loop playsinline preload="metadata" src="/hero-loop.mp4"></video><div class="fluxora-scrim"></div><div class="fluxora-rules"><i></i><i></i><i></i></div></div>`);
+  }
   const grid = document.querySelector<HTMLElement>(".workspace-grid");
   if (!grid || document.querySelector(".protocol-surface")) return;
   grid.insertAdjacentHTML("beforebegin", panelMarkup);
