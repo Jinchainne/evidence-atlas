@@ -10,6 +10,8 @@ The frontend is a product console rather than a static form: a Fluxora-inspired 
 
 The hero uses the supplied GenLayer mark from `frontend/public/genlayer-logo.jpg`, rendered inside the animated consensus orb and kept responsive at mobile widths.
 
+The hero headline is intentionally capped at a responsive `48–88px` scale so the message remains legible without overpowering the evidence workflow.
+
 ## Live release
 
 | Resource | Link |
