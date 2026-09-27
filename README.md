@@ -105,6 +105,8 @@ VITE_RPC_URL=https://studio.genlayer.com/api
 
 The production UI includes a **Start here** guide and **Load sample claim** action. Use it to populate a valid question and the GenLayer documentation URL, then follow the three visible stages: connect, submit, and run consensus.
 
+After a transaction reaches `Finalized`, the UI waits for contract state indexing and refreshes `get_receipt` automatically. This prevents a valid finalized transaction from being shown as “No receipt yet”; the receipt ID field can also be nudged to re-read the canonical state.
+
 The submit action also blocks empty/invalid arguments in the browser before signing. If the wallet is on another network (for example chain `5042`), the app requests a switch to StudioNet before sending the transaction.
 
 The top navigation is functional: **Workspace** focuses the compose form, **Protocol** jumps to the protocol metrics, and **Activity** jumps to the canonical receipt/lifecycle panel. Navigation binds after the React view mounts, updates the URL hash, and supports shareable deep links.

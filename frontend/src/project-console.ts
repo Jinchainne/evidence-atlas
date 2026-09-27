@@ -50,8 +50,35 @@ function mountSurface() {
   });
 }
 
+function watchFinalization() {
+  let seen = "";
+  const refresh = () => {
+    const status = document.querySelector<HTMLElement>(".status");
+    const text = status?.textContent?.trim() ?? "";
+    if (!text.startsWith("Finalized") || text === seen) return;
+    seen = text;
+    if (status) status.textContent = `${text} · syncing canonical receipt…`;
+    window.setTimeout(() => {
+      const input = document.querySelector<HTMLInputElement>('input[placeholder="EVENT-001"]');
+      if (!input?.value) return;
+      const value = input.value;
+      const setter = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(input), "value")?.set;
+      setter?.call(input, "");
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      window.setTimeout(() => {
+        setter?.call(input, value);
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+      }, 120);
+    }, 2200);
+  };
+  const observer = new MutationObserver(refresh);
+  observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+  refresh();
+}
+
 const start = () => {
   mountSurface();
+  watchFinalization();
   const observer = new MutationObserver(mountSurface);
   observer.observe(document.body, { childList: true, subtree: true });
   window.setTimeout(() => observer.disconnect(), 5000);
