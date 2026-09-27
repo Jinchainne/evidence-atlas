@@ -14,6 +14,8 @@ The hero headline is intentionally capped at a responsive `48–88px` scale so t
 
 The GenLayer logo orb uses a lightweight float, glow and sweep animation; all motion is disabled or reduced when the visitor enables `prefers-reduced-motion`.
 
+Scroll performance is protected by pausing the cinematic video and decorative motion while the page is actively scrolling, then resuming after the scroll settles.
+
 ## Live release
 
 | Resource | Link |
