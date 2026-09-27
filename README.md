@@ -12,6 +12,8 @@ The hero uses the supplied GenLayer mark from `frontend/public/genlayer-logo.jpg
 
 The hero headline is intentionally capped at a responsive `48–88px` scale so the message remains legible without overpowering the evidence workflow.
 
+The GenLayer logo orb uses a lightweight float, glow and sweep animation; all motion is disabled or reduced when the visitor enables `prefers-reduced-motion`.
+
 ## Live release
 
 | Resource | Link |
